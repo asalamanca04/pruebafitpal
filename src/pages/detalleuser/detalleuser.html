@@ -1,0 +1,41 @@
+<!--
+  Generated template for the DetalleuserPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Detalle del Usuario</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label stacked>Nombres</ion-label>
+    <ion-input id="nombre" type="text" [readonly]="true" [(ngModel)]="reguser.name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Apellidos</ion-label>
+    <ion-input id="apellidos" type="text" [readonly]="true" [(ngModel)]="reguser.last_name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Email</ion-label>
+    <ion-input id="email" type="text" [readonly]="true" [(ngModel)]="reguser.email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Tipo de Documento</ion-label>
+    <ion-input id="documento" type="text" [readonly]="true" [(ngModel)]="reguser.doc_type"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Numero de Documento</ion-label>
+    <ion-input id="ndocumento" type="number" [readonly]="true" [(ngModel)]="reguser.doc_number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Ciudad</ion-label>
+    <ion-input id="ciudad" type="text" [readonly]="true" [(ngModel)]="reguser.city.name"></ion-input>
+  </ion-item>
+</ion-content>
